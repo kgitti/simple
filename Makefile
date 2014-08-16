@@ -12,6 +12,7 @@ All: build run junit clean
 
 build:
 	###### Build program     ######
+	mkdir -p bin
 	javac -cp ".:bin/*:lib/*" -d $(PROJECT_PROD) $(PROJECT_SRC)
 
 run:
