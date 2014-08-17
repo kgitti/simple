@@ -11,7 +11,7 @@ public class TestRunner {
       HelloworldTestSuite.debug();
    }
    public static void main(String[] args) {
-      //TestRunner.enabledDebug();
+      TestRunner.enabledDebug();
       Result result = JUnitCore.runClasses(HelloworldTestSuite.class);
       for (Failure failure : result.getFailures()) {
          System.out.println(failure.toString());
